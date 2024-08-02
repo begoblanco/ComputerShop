@@ -3,15 +3,15 @@ package dev.bego;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Shop {
+public class Store {
 
     private String name;
-    private ShopOwner owner;
-    private int nif;
+    private StoreOwner owner;
+    private String nif;
 
     private List<Computer> computers;
 
-    public Shop(String name, ShopOwner owner, int nif) {
+    public Store(String name, StoreOwner owner, String nif) {
         this.name = name;
         this.owner = owner;
         this.nif = nif;
@@ -26,19 +26,19 @@ public class Shop {
         this.name = name;
     }
 
-    public ShopOwner getOwner() {
+    public StoreOwner getOwner() {
         return owner;
     }
 
-    public void setOwner(ShopOwner owner) {
+    public void setOwner(StoreOwner owner) {
         this.owner = owner;
     }
 
-    public int getNif() {
+    public String getNif() {
         return nif;
     }
 
-    public void setNif(int nif) {
+    public void setNif(String nif) {
         this.nif = nif;
     }
 
@@ -61,8 +61,8 @@ public class Shop {
         // computers.remove(i);
         // }
         // }
-        computers.removeIf(computer -> computer.getBrand().equalsIgnoreCase(brand)); // Una alternativa con un metodo
-                                                                                     // mas moderno
+        computers.removeIf(computer -> computer.getBrand().equalsIgnoreCase(brand)); // Una alternativa con un metodo mas moderno waaaw
+                                                                                     
 
     }
 
